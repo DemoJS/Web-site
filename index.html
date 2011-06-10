@@ -5,25 +5,34 @@
 <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
 <style>
 *{margin: 0; padding: 5px 0;}
-body{font-family: Helvetica, Arial, sans-serif; text-align:center; background:#2E2633}
+body{font-family: Helvetica, Arial, sans-serif; text-align:center; background:#EEE}
 h1, h2{font-family:'Paytone One', Arial, sans-serif;}
 ul{list-style-position:inside}
 
-#container{width:960px; margin:auto; text-align: left; background:#555152; color:#99173C}
+#container{width:960px; margin:auto; text-align: left; background:#000; color:#88A65E; border-radius:25px;}
+#container > * {margin: 0 20px;}
 
-#description{ color: #EFFFCD}
-#date{ color: #DCE9BE}
-#location{ color: #EFFFCD}
-#people, #sponsors{width:480px;}
+#logo h1 {color: #5E8C6A}
+
+#content > h2:nth-child(2n+1) { color: #BFB35A}
+#content > h2:nth-child(2n) { color: #F2C45A}
+
+#people, #sponsors{width:440px;}
 
 .left{float:left}
 .right{float:right}
 hr.space{visibility:hidden; height:0; clear:both;} 
+.shadow{
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+  -o-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+}
 
 </style>
 </head>
 <body>
-<div id="container" itemscope itemtype="http://schema.org/Event">
+<div id="container" class="shadow" itemscope itemtype="http://schema.org/Event">
   <div id="logo"><h1 itemprop="name">Demo.js Paris</h1></div>
   <div id="content">
     <h2 id="description" itemprop="description">First french JS oriented Demo Party</h2>
