@@ -1,18 +1,56 @@
 <!doctype html>
 <html>
 <head>
-  <title>Demo.js</title>
+<title>Demo.js</title>
+<link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+<style>
+*{margin: 0; padding: 5px 0;}
+body{font-family: Helvetica, Arial, sans-serif; text-align:center; background:#2E2633}
+h1, h2{font-family:'Paytone One', Arial, sans-serif;}
+ul{list-style-position:inside}
+
+#container{width:960px; margin:auto; text-align: left; background:#555152; color:#99173C}
+
+#description{ color: #EFFFCD}
+#date{ color: #DCE9BE}
+#location{ color: #EFFFCD}
+#people, #sponsors{width:480px;}
+
+.left{float:left}
+.right{float:right}
+hr.space{visibility:hidden; height:0; clear:both;} 
+
+</style>
 </head>
 <body>
-<div id="container">
-  <div id="logo"><h1>Demo.js</h1>Paris 2011-07-02</div>
+<div id="container" itemscope itemtype="http://schema.org/Event">
+  <div id="logo"><h1 itemprop="name">Demo.js Paris</h1></div>
   <div id="content">
-  
-    <h2>What</h2>
+    <h2 id="description" itemprop="description">First french JS oriented Demo Party</h2>
+    <h2 id="date">From 
+      <span itemprop="startDate" datetime="2011-07-01T19:30CEST">2011-07-01 @ 19:30PM</span> 
+      to 
+      <span itemprop="endDate" datetime="2011-07-02T23:00CEST" >2011-07-02 @ 23:00PM</span>
+    </h2>
+    <h2 id="location" itemprop="location" itemscope itemtype="http://schema.org/LocalBusiness">@ <span itemprop="name">Isart Digital</span></h2>
+  </div>
+  <div id="footer">
 
-
-    <h2>When</h2>
-    <h2>Where</h2>
+    <div id="sponsors" class="left">
+      Thanks to our wonderful sponsors : 
+      <ul>
+        <li id="mozilla">Mozilla</li>
+        <li id="isart">Isart digital</li>
+      </ul>
+    </div>
+    <div id="people" class="right">  
+      This event is brought to you by : 
+      <ul>
+        <li>The french demo scene</li>
+        <li>Paris.org community</li>
+      </ul>
+    </div>
+    <hr class="space"/>
   </div>
 </div>
 </body>
