@@ -2,8 +2,10 @@
 <html>
 <head>
 <title>Demo.js</title>
-<link href='http://fonts.googleapis.com/css?family=Droid+sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+sans' rel='stylesheet' type='text/css'/>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<script src="lib/jquery.js"></script>
+<script src="lib/underscore.js"></script>
 </head>
 <body>
 
@@ -42,7 +44,6 @@
     <p><em>(Emails are just collected for kind reminder of the event a few days before, these won't be sell or use for anything else)</em></p>
     <h2>Already registered</h2>
     <ul id="public" >
-      <li>Alexandre Stanislawski</li>
     </ul> 
   </div>
 
@@ -63,8 +64,17 @@
       </ul>
     </div>
     <hr class="space"/>
-    <p>Logo by Made(<a href="http://m4de.com">m4de.com</a>).</p>
+    <p>Logo by Made (<a href="http://m4de.com">m4de.com</a>).</p>
   </div>
 </div>
+<script>
+  jQuery(function($){
+  $.getJSON("registered.json.php", function(data){
+    console.log(data);
+    var $t = $("#public");
+    _.each(data.contestants, function(t){$t.append("<li>"+t+"</li>")}); 
+  });
+  });
+</script>
 </body>
 </html>
