@@ -24,15 +24,21 @@ html, body, #container{ padding: 0}
 #content > p  { }
 #content iframe {width:920px; height:400px}
 
+#registration{background:#333; border-radius: 5px}
+#registration > * {margin: 0 10px}
+#registration > form > *{margin: 5px }
+
 #footer {margin: 20px 0 0 0; background-color: #CCC; padding: 10px 20px 0 20px; border-radius: 20px 0 0 0}
 #footer ul {list-style-type: none;}
 #people, #sponsors{width:440px;}
 /*
 .register{font-size: 400%; color: #F2C45A;text- text-transform: capitalize; font-weight:bold}
 */
+.veryBig{font-size:400%; vertical-align:top}
 .left{float:left}
 .right{float:right}
-hr.space{visibility:hidden; height:0; clear:both;} 
+.clear{clear:both}
+hr.space{visibility:hidden; height:0; clear:both; padding:0; margin:0} 
 .shadow{
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
   -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
@@ -63,8 +69,21 @@ hr.space{visibility:hidden; height:0; clear:both;}
     <br />
     <a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;t=h&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A">Agrandir le plan</a>
     <p>
-    <h2 id="contesters">People coming</h2>
-    <ul>
+    <h2 id="contesters">Come :D</h2>
+    <div id="registration"> 
+      <form action="register.php" class="left">
+        <input type="text" id="name" name="name" placeholder="Nom ou pseudo"/>
+        <input type="email" id="email" name="email" placeholder="Email"/><br/>
+        <label for="contest">Are you interested in entering the contest?</label>
+        <input type="checkbox" id="contest" name="contest"/><br/>
+        <input type="submit"/>
+      </form>
+      <p class="veryBig right">Register Now!</p>
+    <hr class="space"/>
+    </div>
+    <p><em>(Emails are just collected for kind reminder of the event a few days before, these won't be sell or use for anything else)</em></p>
+    <h2>Already registered</h2>
+    <ul id="public" >
       <li>Alexandre Stanislawski</li>
     </ul> 
   </div>
