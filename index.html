@@ -9,9 +9,11 @@ body{font-family:  'Droid sans', Arial, sans-serif; text-align:center; backgroun
 h1, h2{font-family:'Droid sans', Arial, sans-serif; text-transform: uppercase}
 ul{list-style-position:inside}
 
+html, body, #container{ padding: 0}
+
 #container{width:960px; margin:auto; text-align: left;}
 
-#logo {display: block; width: 230px; height: 150px; background:url('img/logoDemoJS_sd.png') 20px 0 ; background-repeat: no-repeat;}
+#logo {display: block; width: 230px; height: 150px; background:url('img/logoDemoJS_sd.png') 20px 15px ; background-repeat: no-repeat;}
 #logo h1 {color: #5E8C6A}
 #logo span {display: none;}
 
@@ -20,7 +22,10 @@ ul{list-style-position:inside}
 #content > h2 { color: rgb(255,103,1)}
 #content a    { color:#88A65E;}
 #content > p  { }
+#content iframe {width:920px; height:400px}
 
+#footer {margin: 20px 0 0 0; background-color: #CCC; padding: 10px 20px 0 20px; border-radius: 20px 0 0 0}
+#footer ul {list-style-type: none;}
 #people, #sponsors{width:440px;}
 /*
 .register{font-size: 400%; color: #F2C45A;text- text-transform: capitalize; font-weight:bold}
@@ -51,9 +56,10 @@ hr.space{visibility:hidden; height:0; clear:both;}
     <p>For the one who wants to compete the party starts on friday at 7:30PM. For those who just want to learn and party, 
     let's meet saturday afternon beginning at 2:00PM. There will be conferences all afternoon with a vote for the best demos,
     in the evening at 7:00PM (this is the real uber show)</p>
+    <p>More infos very soon, so stay tuned... ;)</p>
     <h2 id="location" itemprop="location" itemscope itemtype="http://schema.org/LocalBusiness">@ <span itemprop="name">Isart Digital</span></h2>
     <p>
-    <iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;t=h&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;t=h&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
     <br />
     <a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;t=h&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A">Agrandir le plan</a>
     <p>
@@ -63,7 +69,6 @@ hr.space{visibility:hidden; height:0; clear:both;}
     </ul> 
   </div>
 
-<a href="#" class="register">&gt;Register&lt;</a>
   <div id="footer">
 
     <div id="sponsors" class="left">
