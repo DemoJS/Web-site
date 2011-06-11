@@ -16,6 +16,7 @@
   <div id="content" class="shadow" >
     <h2>Thank you!</h2>
     <p>May the ancient gods of the scene be with you</p>
+    <p><a href="/">Return to the homepage</a></p>
   </div>
 
   <div id="footer" class="shadow">
