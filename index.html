@@ -2,23 +2,29 @@
 <html>
 <head>
 <title>Demo.js</title>
-<link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+sans' rel='stylesheet' type='text/css'>
 <style>
 *{margin: 0; padding: 5px 0;}
-body{font-family: Helvetica, Arial, sans-serif; text-align:center; background:#EEE}
-h1, h2{font-family:'Paytone One', Arial, sans-serif;}
+body{font-family:  'Droid sans', Arial, sans-serif; text-align:center; background:#EEE}
+h1, h2{font-family:'Droid sans', Arial, sans-serif; text-transform: uppercase}
 ul{list-style-position:inside}
 
-#container{width:960px; margin:auto; text-align: left; background:#000; color:#88A65E; border-radius:25px;}
-#container > * {margin: 0 20px;}
+#container{width:960px; margin:auto; text-align: left;}
 
+#logo {display: block; width: 230px; height: 150px; background:url('img/logoDemoJS_sd.png') 20px 0 ; background-repeat: no-repeat;}
 #logo h1 {color: #5E8C6A}
+#logo span {display: none;}
 
-#content > h2:nth-child(2n+1) { color: #BFB35A}
-#content > h2:nth-child(2n) { color: #F2C45A}
+#content { background:#000; border-radius:0 25px;}
+#content > * {margin: 0 20px; color: #EEE}
+#content > h2 { color: rgb(255,103,1)}
+#content a    { color:#88A65E;}
+#content > p  { }
 
 #people, #sponsors{width:440px;}
-
+/*
+.register{font-size: 400%; color: #F2C45A;text- text-transform: capitalize; font-weight:bold}
+*/
 .left{float:left}
 .right{float:right}
 hr.space{visibility:hidden; height:0; clear:both;} 
@@ -28,21 +34,36 @@ hr.space{visibility:hidden; height:0; clear:both;}
   -o-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
   box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
 }
-
 </style>
 </head>
 <body>
-<div id="container" class="shadow" itemscope itemtype="http://schema.org/Event">
-  <div id="logo"><h1 itemprop="name">Demo.js Paris</h1></div>
-  <div id="content">
+
+<div id="container" itemscope itemtype="http://schema.org/Event">
+  <div id="logo"><h1 itemprop="name"><span class="logoFallback">Demo.js Paris</span></h1></div>
+  <div id="content" class="shadow" >
     <h2 id="description" itemprop="description">First french JS oriented Demo Party</h2>
+    <p>DemoJS Party is a french demo party focussed only on web technologies (JS, Canvas, SVG, Audio... well everything in the web). </p>
     <h2 id="date">From 
       <span itemprop="startDate" datetime="2011-07-01T19:30CEST">2011-07-01 @ 19:30PM</span> 
       to 
       <span itemprop="endDate" datetime="2011-07-02T23:00CEST" >2011-07-02 @ 23:00PM</span>
     </h2>
+    <p>For the one who wants to compete the party starts on friday at 7:30PM. For those who just want to learn and party, 
+    let's meet saturday afternon beginning at 2:00PM. There will be conferences all afternoon with a vote for the best demos,
+    in the evening at 7:00PM (this is the real uber show)</p>
     <h2 id="location" itemprop="location" itemscope itemtype="http://schema.org/LocalBusiness">@ <span itemprop="name">Isart Digital</span></h2>
+    <p>
+    <iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;t=h&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br />
+    <a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;t=h&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A">Agrandir le plan</a>
+    <p>
+    <h2 id="contesters">People coming</h2>
+    <ul>
+      <li>Alexandre Stanislawski</li>
+    </ul> 
   </div>
+
+<a href="#" class="register">&gt;Register&lt;</a>
   <div id="footer">
 
     <div id="sponsors" class="left">
@@ -52,11 +73,11 @@ hr.space{visibility:hidden; height:0; clear:both;}
         <li id="isart">Isart digital</li>
       </ul>
     </div>
-    <div id="people" class="right">  
+    <div id="people" class="right" style="text-align :right">  
       This event is brought to you by : 
       <ul>
         <li>The french demo scene</li>
-        <li>Paris.org community</li>
+        <li>ParisJS.org community</li>
       </ul>
     </div>
     <hr class="space"/>
