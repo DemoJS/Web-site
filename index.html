@@ -13,7 +13,10 @@
   <div id="logo"><h1 itemprop="name"><span class="logoFallback">Demo.js Paris</span></h1></div>
   <div id="content" class="shadow" >
     <h2 id="description" itemprop="description">First french JS oriented Demo Party</h2>
-    <p>DemoJS Party is a french demo party focussed only on web technologies (JS, Canvas, SVG, Audio... well everything in the web). </p>
+    <p>DemoJS Party is a french demo party focussed only on web technologies (JS, Canvas, SVG, Audio... well everything in the web). 
+      <a href="#descMoreInfos" class="moreInfos">more infos</a> 
+    </p>
+    <p id="descMoreInfos" class="moreInfos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend tellus quis velit eleifend condimentum. Aliquam ut nisi odio. In hac habitasse platea dictumst. Nullam sed scelerisque libero. Vestibulum vitae leo purus. Aenean at imperdiet metus. In vitae sem auctor mauris adipiscing cursus. Curabitur fringilla elementum mi non scelerisque. Sed quam risus, feugiat ac pretium eget, sollicitudin ac enim. Suspendisse commodo cursus nisl nec imperdiet. Quisque fermentum lacus in enim interdum egestas. Suspendisse potenti. Vestibulum cursus lectus a sapien accumsan eu blandit magna hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu quam, vel accumsan sem. Aenean.</p>
     <h2 id="date">From 
       <span itemprop="startDate" datetime="2011-07-01T19:30CEST">2011-07-01 @ 19:30PM</span> 
       to 
@@ -22,7 +25,10 @@
     <p>For the one who wants to compete the party starts on friday at 7:30PM. For those who just want to learn and party, 
     let's meet saturday afternon beginning at 2:00PM. There will be conferences all afternoon with a vote for the best demos,
     in the evening at 7:00PM (this is the real uber show)</p>
-    <p>More infos very soon, so stay tuned... ;)</p>
+    <p>More infos very soon, so stay tuned... ;) 
+      <a href="#stayTuneMoreInfos" class="moreInfos">more infos</a> 
+    </p>
+    <p id="stayTuneMoreInfos" class="moreInfos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend tellus quis velit eleifend condimentum. Aliquam ut nisi odio. In hac habitasse platea dictumst. Nullam sed scelerisque libero. Vestibulum vitae leo purus. Aenean at imperdiet metus. In vitae sem auctor mauris adipiscing cursus. Curabitur fringilla elementum mi non scelerisque. Sed quam risus, feugiat ac pretium eget, sollicitudin ac enim. Suspendisse commodo cursus nisl nec imperdiet. Quisque fermentum lacus in enim interdum egestas. Suspendisse potenti. Vestibulum cursus lectus a sapien accumsan eu blandit magna hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu quam, vel accumsan sem. Aenean.</p>
     <h2 id="location" itemprop="location" itemscope itemtype="http://schema.org/LocalBusiness">@ <span itemprop="name">Isart Digital</span></h2>
     <p>
     <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
@@ -68,13 +74,28 @@
   </div>
 </div>
 <script>
-  jQuery(function($){
+jQuery(function($){
+  $("a.moreInfos").click(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    var $link = $(this);
+    var target = $link.attr("href");
+    var $t = $(target);
+    $t.height( $t.height()===0?$t.attr("data-targetSize"):0);
+  });
+
+  $("p.moreInfos").each(function(i, elt){ 
+    var $elt = $(elt);
+    $elt.attr("data-targetSize", $elt.height());
+    $elt.height(0);
+  });
+
   $.getJSON("registered.json.php", function(data){
     console.log(data);
     var $t = $("#public");
     _.each(data.contestants, function(t){$t.append("<li>"+t+"</li>")}); 
   });
-  });
+});
 </script>
 </body>
 </html>
