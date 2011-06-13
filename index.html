@@ -37,20 +37,20 @@
     <p>
     <h2 id="contesters">Come :D</h2>
     <div id="registration"> 
-      <form action="register.php" class="left" method="post">
-        <input type="text" id="name" name="name" placeholder="Nom ou pseudo"/>
-        <input type="email" id="email" name="email" placeholder="Email"/><br/>
-        <label for="contest">Are you interested in entering the contest?</label>
-        <input type="checkbox" id="contest" name="contest"/><br/>
-        <input type="submit"/>
-      </form>
-      <p class="veryBig right" id="registerMessage">Register Now!</p>
-    <hr class="space"/>
+      <iframe  src="http://www.eventbrite.com/tickets-external?eid=1795958761&ref=etckt" frameborder="0" height="224" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+      <div>
+        <a target="_blank" href="http://www.eventbrite.com/features?ref=etckt" >Online event registration</a>
+        <span> for </span>
+        <a target="_blank" href="http://demojs1.eventbrite.com?ref=etckt" >DemoJS demoparty</a>
+        <span> powered by </span>
+        <a target="_blank" href="http://www.eventbrite.com?ref=etckt" >Eventbrite</a>
+      </div>
     </div>
-    <p><em>(Emails are just collected for kind reminder of the event a few days before, these won't be sell or use for anything else)</em></p>
+    <!-- 
+    la liste des participants est desactive pour le moment.
     <h2>Already registered</h2>
     <ul id="public" >
-    </ul> 
+    </ul> -->
   </div>
 
   <div id="footer" class="shadow">
@@ -89,12 +89,12 @@ jQuery(function($){
     $elt.attr("data-targetSize", $elt.height());
     $elt.height(0);
   });
-
+/*
   $.getJSON("registered.json.php", function(data){
     console.log(data);
     var $t = $("#public");
     _.each(data.contestants, function(t){$t.append("<li>"+t+"</li>")}); 
-  });
+  });*/
 });
 </script>
 </body>
