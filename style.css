@@ -6,6 +6,8 @@ a img{border:none}
 .schedule li {padding:0px;}
 .center { text-align:center;}
 
+ul ul{list-style-type: none}
+
 html, body, #container{ padding: 0}
 
 #container{max-width:960px; margin:auto; text-align: left;}
