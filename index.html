@@ -1,132 +1,83 @@
 <!doctype html>
 <html>
   <head>
-    <title>DemoJS demoparty - Paris - 1st &amp; 2nd July 2011</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style>
-
-*{margin: 0; padding: 5px 0;}
-body{font-family: 'Droid sans', Arial, sans-serif; text-align:center; background:#EEE}
-h1, h2{font-family:'Droid sans', Arial, sans-serif; text-transform: uppercase}
-ul{list-style-position:inside}
-a img{border:none}
-.schedule li {padding:0px;}
-.center { text-align:center;}
-
-html, body, #container{ padding: 0}
-
-#container{max-width:960px; margin:auto; text-align: left;}
-
-#logo {display: block; width: 406px; height: 150px; background:url('img/logoDemoJS_sd.png') 20px 15px ; background-repeat: no-repeat;}
-#logo h1 {color: #5E8C6A}
-#logo span {display: none;}
-
-#content { background:#000; border-radius:0 25px;}
-#content > * {margin: 0 20px; color: #EEE}
-#content > h2 { color: rgb(255,103,1); margin-top: 20px;}
-#content > h2:first-child { color: rgb(255,103,1); margin-top: 10px;}
-#content a    { color:rgb(255,103,1); font-weight:bold;}
-#content > p:last-child {margin-bottom: 10px}
-#content iframe {width:100%; height:400px}
-
-#registration iframe{height:auto; height:188px; }
-
-#footer {margin: 20px 0 0 0; background-color: #AAA; padding: 10px 20px 0 20px; border-radius: 20px 0 0 0}
-#footer ul {list-style-type: none;}
-
-.veryBig{font-size:400%; vertical-align:top}
-.left, .right{width:49%;}
-.left{float:left}
-.right{float:right; text-align:right}
-.clear{clear:both}
-hr.space{visibility:hidden; height:0; clear:both; padding:0; margin:0}
-.shadow{
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
-  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
-  -o-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
-}
-
-div.moreInfos{ padding:0; overflow:hidden;
-  -webkit-transition-duration:500ms;
-  -moz-transition-duration:500ms;
-  -o-transition-duration:500ms;
-  transition-duration:500ms;
-}
-
-@media screen and (max-width:500px){
-  .left, .right{float:none; text-align: left;width:100%;}
-}
-
-    </style>
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <title>DemoJS demoparty 2011</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <script src="lib/jquery.js"></script>
     <script src="lib/underscore.js"></script>
-  </head>
+   </head>
   <body>
     <div id="container" itemscope="" itemtype="http://schema.org/Event">
       <div id="logo"><h1 itemprop="name"><span class="logoFallback">Demo.js Paris</span></h1></div>
       <div id="content" class="shadow">
-        <h2>DemoJS demoparty - Paris - 1st &amp; 2nd July 2011</h2>
-        <p>DemoJS party is a french <strong>demoparty focused on web technologies</strong> (JavaScript, Canvas, SVG, Audio... well everything in the web). The event is part of the <a href="http://mozillalabs.com/demoparty/paris">Mozilla Labs demoparty initiative</a>.</p>
-        <p>Coders and artists will gather in Paris during 2 days to socialize, party, and produce audiovisual web demos that will compete in three categories.</p>
+        <h2>DemoJS demoparty - Paris - 1st &amp; 2nd of July 2011</h2>
+        <p>DemoJS party is a french <strong>demoparty focused on web technologies</strong> (JavaScript, Canvas, SVG, Audio... well every openweb-related piece of technology). The event is part of the <a href="http://mozillalabs.com/demoparty/paris">Mozilla Labs demoparty initiative</a>.</p>
+        <p>Coders and artists will gather in Paris for 2 days to socialize, party, and produce audiovisual web demos that will compete in two categories.</p>
         <ul>
           <li>
           <strong>
             <span itemprop="startDate" datetime="2011-07-01T19:30CEST">1st</span> 
             &amp; 
-            <span itemprop="endDate" datetime="2011-07-02T23:00CEST" >2nd july 2011</span>
-          </strong> (from friday 19:30 to saturday 23:30) (<a href="#schedule">schedule</a>)</li>
+            <span itemprop="endDate" datetime="2011-07-02T23:30CEST" >2nd of July</span>
+          </strong> (from Friday 19:30 to Saturday 23:30) (<a href="#schedule">schedule</a>)</li>
           <li itemprop="location" itemscope itemtype="http://schema.org/LocalBusiness">
             <strong itemprop="name">@ ISART Digital</strong> 
             - 2 rue de la Roquette (Passage du Cheval Blanc) - 75011 Paris (<a href="#map">map</a>)
           </li>
-          <li><strong>3 compos:</strong> one effect, 1k, no limit. And <strong>cool prizes</strong>! (<a href="#compos">more infos</a>)</li>
-          <li><strong>remote entries allowed (<a href="#remote">more infos</a>)</strong></li>
-          <li><strong>conferences &amp; workshops (<a href="#conf">more infos</a>)</strong></li>
+          <li><strong>2 compos:</strong> 1k & One-effect/freestyle. And <strong>cool prizes</strong>! (<a href="#compos">more info</a>)</li>
+          <li><strong>remote entries allowed (<a href="#remote">more info</a>)</strong></li>
+          <li><strong>conferences &amp; workshops (<a href="#conf">more info</a>)</strong></li>
           <li><strong>free entrance!</strong></li>
           <li><a href="#register">REGISTER NOW</a></li>
         </ul>
-        <p>You can come on friday and sleep at the party place, or arrive on saturday.</p>
-        <p>Contact us by <a href="contact@demojs.org">email</a>, on <a href="http://twitter.com/demojsorg">Twitter</a> (hashtag: <a href="http://search.twitter.com/search?q=%23demojs">#demojs</a>), on <a href="https://www.facebook.com/pages/DemoJS/173071902751973">Facebook</a> (<a href="https://www.facebook.com/event.php?eid=226012780761812">event</a>) or on <a href="irc://irc.freenode.net/demojs">IRC</a> (#demojs on Freenode).</p>
+        <p>You can come on Friday and spand the night at the venue, or you can come straight for the party on saturday.</p>
+        <p>Contact us by <a href="contact@demojs.org">email</a>, on <a href="http://twitter.com/demojsorg">Twitter</a> (hashtag: <a href="http://search.twitter.com/search?q=%23demojs">#demojs</a>), on <a href="https://www.facebook.com/DemoJS">Facebook</a> (<a href="https://www.facebook.com/event.php?eid=226012780761812">event</a>) or on <a href="irc://irc.freenode.net/demojs">IRC</a> (#demojs on Freenode).</p>
 
 
         <h2 id="demoscene">Demoscene? Demoparty?</h2>
-        <p>The demoscene is a computer art subculture that specializes in producing demos, which are non-interactive audio-visual presentations that run in real-time on a computer. Demosceners are coders, graphicians, computer musicians... (<a href="http://en.wikipedia.org/wiki/Demoscene">more infos</a>)</p>
-        <p>A demoparty is an event that gathers demosceners and other computer enthusiasts to compete in competitions (<a href="http://en.wikipedia.org/wiki/Demoparty">more infos</a>).</p>
+        <p>The demoscene is a computer art subculture that specializes in producing demos, which are audio-visual presentations that run in real-time on a computer. Demosceners are coders, graphic artists, computer musicians... (<a href="http://en.wikipedia.org/wiki/Demoscene">more info</a>)</p>
+        <p>A demoparty is an event that gathers demosceners and other computer enthusiasts to compete (<a href="http://en.wikipedia.org/wiki/Demoparty">more info</a>).</p>
         <p>DemoJS demoparty is a demoparty specialized in web technologies. We welcome both experienced demosceners and people who have never been to a demoparty.</p>
-        <p>If you are a beginner in web technologies, <a href="#beginner" class="moreInfos">here are some links</a> to help you. Also, you will find help at the party place, feel free to ask around you!</p>
+        <p>If you are a beginner in web technologies, <a href="#beginner" class="moreInfos">here are some links</a> to help you. Also, you will find help at the party place, don't hesitate to ask people around you!</p>
 
         <div id="beginner" class="moreInfos">
           <p>Some resources gathered to get started on webgl : </p>
           <ul>
-            <li>3d tutorials and docs related to webgl:
+            <li>3d tutorials and WebGL related documentation :
             <ul>
-              <li>http://learningwebgl.com/</li>
-              <li>http://www.khronos.org/registry/webgl/specs/latest/</li>
+              <li><a href="http://learningwebgl.com/">http://learningwebgl.com/</a></li>
+              <li><a href="http://www.khronos.org/registry/webgl/specs/latest/">http://www.khronos.org/registry/webgl/specs/latest/</a></li>
             </ul>
             </li>
             <li>3d frameworks:
             <ul>
-              <li>https://github.com/mrdoob/three.js</li>
-              <li>http://osgjs.org/</li>
-              <li>http://www.cubicvr.org/</li>
-              <li>http://spidergl.org/</li>
-              <li>http://www.ambiera.com/copperlicht/index.html</li>
-              <li>http://www.glge.org/</li>
-              <li>http://www.scenejs.com/</li>
+              <li><a href="https://github.com/mrdoob/three.js">https://github.com/mrdoob/three.js</a></li>
+              <li><a href="http://osgjs.org/">http://osgjs.org/</a></li>
+              <li><a href="http://www.cubicvr.org/">http://www.cubicvr.org/</a></li>
+              <li><a href="http://spidergl.org/">http://spidergl.org/</a></li>
+              <li><a href="http://www.ambiera.com/copperlicht/index.html">http://www.ambiera.com/copperlicht/index.html</a></li>
+              <li><a href="http://www.glge.org/">http://www.glge.org/</a></li>
+              <li><a href="http://www.scenejs.com/">http://www.scenejs.com/</a></li>
             </ul>
             </li>
             <li>Webgl utilities:
             <ul>
-              <li>http://github.com/OneGeek/WebGLU</li>
-              <li>http://github.com/jackpal/webgltrace</li>
-              <li>https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/sdk/demos/common/webgl-utils.js</li>
-              <li>https://github.com/fintler/webgl-unproject</li>
+              <li><a href="http://github.com/OneGeek/WebGLU">http://github.com/OneGeek/WebGLU</a></li>
+              <li><a href="http://github.com/jackpal/webgltrace">http://github.com/jackpal/webgltrace</a></li>
+              <li><a href="https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/sdk/demos/common/webgl-utils.js">https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/sdk/demos/common/webgl-utils.js</a></li>
+              <li><a href="https://github.com/fintler/webgl-unproject">https://github.com/fintler/webgl-unproject</a></li>
             </ul></li>
-            <li>For creating shaders:
+            <li>Shader creation:
             <ul>
-              <li>http://www.iquilezles.org/apps/shadertoy/</li>
+              <li><a href="http://www.iquilezles.org/apps/shadertoy/">http://www.iquilezles.org/apps/shadertoy/</a></li>
+            </ul>
+            </li>
+            <li>Canvas documentation : 
+            <ul>
+              <li><a href="http://diveintohtml5.org/canvas.html#divingin">http://diveintohtml5.org/canvas.html#divingin</a></li>
+              <li><a href="https://developer.mozilla.org/en/canvas_tutorial">https://developer.mozilla.org/en/canvas_tutorial</a></li>
             </ul>
             </li>
           </ul>
@@ -134,17 +85,16 @@ div.moreInfos{ padding:0; overflow:hidden;
 
         <h2 id="schedule">Schedule</h2>
         <ul class="schedule">
-          <li>friday <strong>19:30 - <em>party starts!</em></strong></li>
-          <li>saturday <strong>10:00 - <em>breakfast</em></strong></li>
-          <li>saturday <strong>14:00 &gt; 17:00 - <em>conferences</em></strong></li>
-          <li>saturday <strong>19:00 - <em>deadline for remote entries</em></strong></li>
-          <li>saturday <strong>20:00 - <em>deadline for party entries</em></strong></li>
-          <li>saturday <strong>21:00 - <em>entries are shown on the bigscreen!</em></strong></li>
-          <li>saturday <strong>22:00 - <em>public vote</em></strong></li>
-          <li>saturday <strong>23:00 - <em>prizegiving</em></strong></li>
-          <li>saturday <strong>23:00 - <em>party ends</em></strong></li>
+          <li>Friday <strong>19:30 - <em>party starts!</em></strong></li>
+          <li>Saturday <strong>10:00 - <em>breakfast</em></strong></li>
+          <li>Saturday <strong>14:00 &gt; 17:00 - <em>conferences</em></strong></li>
+          <li>Saturday <strong>19:00 - <em>deadline for remote entries</em></strong></li>
+          <li>Saturday <strong>20:00 - <em>deadline for party entries</em></strong></li>
+          <li>Saturday <strong>21:00 - <em>entries are shown on the bigscreen!</em></strong></li>
+          <li>Saturday <strong>22:00 - <em>public vote</em></strong></li>
+          <li>Saturday <strong>23:00 - <em>prizegiving</em></strong></li>
+          <li>Saturday <strong>23:00 - <em>party ends</em></strong></li>
         </ul>
-
 
         <h2 id="map">Venue: Isart Digital - right next to the Opera Bastille</h2>
         <p>
@@ -155,33 +105,35 @@ div.moreInfos{ padding:0; overflow:hidden;
         <h2 id="compos">Compos &amp; prizes</h2>
         <p>Open Web technologies only, no plug-ins, no extras. The demo should not have been released previously, shoud not include copyrighted material, should work on the last version of Firefox &amp; Chrome, and should work offline.</p>
         <ul>
-          <li><strong>Single effect:</strong> one scene, one effect, max playing time of 60 seconds (<a href="http://plopbyte.net/webgl-particles-demo/">example</a>)</li>
-          <li><strong>JavaScript 1k:</strong> play with a few bytes.</li>
-          <li><strong>Full demo</strong></li>
+          <li><strong>Size limited - JavaScript 1k:</strong> play with a few bytes (<a href="http://js1k.com/2010-first/demo/454">example</a> - <a href="http://blog.gamesfrommars.fr/2010/08/19/my-js1k-entry/">help</a>)</li>
+          <li><strong>Freestyle - One effect or more:</strong> no size-limit, just show us cool stuff using web technologies ;)</li>
         </ul>
         <p>Compo machines specs coming soon.</p>
-        <p>The orga team reserve the right to disqualify entries that are inappropriate (pornography, illegal content, ...).</p>
+        <p>The organizing team reserve the right to disqualify entries that are inappropriate (pornography, illegal content, ...).</p>
         <p>
-        <strong>The winning demo of each category will be featured on <a href="http://mozillalabs.com">the Mozilla Labs website</a>. We have also cool prizes for the top entries: books, tshirts, ...</strong>
+        <strong>The winning demo of each category will be featured on <a href="http://mozillalabs.com">the Mozilla Labs website</a>. We also have cool prizes for the top entries: books, tshirts, ...</strong>
         </p>
         <h2 id="remote">Remote participation</h2>
-        <p>More info coming soon</p>
+        <p>Remote participation is welcome, but you won't win any physical prize. Deadline is <strong>July 2nd at 19:00</strong>.</p>
+<p>Send your production by email: <a href="mailto:contact@demojs.org">contact@demojs.org</a>.</p>
         <h2 id="conf">Conferences and workshops</h2>
         <p>More info coming soon</p>
         <h2 id="register">Register</h2>
+	<p>Please take a few minutes to register if you are planning to come.</p>
         <div id="registration">
           <iframe src="http://www.eventbrite.com/tickets-external?eid=1795958761&amp;ref=etckt" frameborder="0" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+	<a href="http://demojs1.eventbrite.com/">view the attendee list on eventbrite</a>
         </div>
 
         <h2 id="contast">Contact us</h2>
         <p>You can contact us:</p>
         <ul>
           <li>by email: <a href="mailto:contact@demojs.org">contact@demojs.org</a></li>
-          <li>on Twitter: <a href="http://twitter.com/demojs.org">@demojsorg</a> (hashtag: <a href="http://search.twitter.com/search?q=%23demojs">#demojs</a>) </li>
-          <li>on Facebook: <a href="https://www.facebook.com/pages/DemoJS/173071902751973">page</a> - <a href="https://www.facebook.com/event.php?eid=226012780761812">event</a></li>
+          <li>on Twitter: <a href="http://twitter.com/demojsorg">@demojsorg</a> (hashtag: <a href="http://search.twitter.com/search?q=%23demojs">#demojs</a>) </li>
+          <li>on Facebook: <a href="https://www.facebook.com/DemoJS">page</a> - <a href="https://www.facebook.com/event.php?eid=226012780761812">event</a></li>
           <li>on IRC: <a href="irc://irc.freenode.net">#demojs @ freenode</a></li>
         </ul>
-        <p>Many thanks to the <a href="https://twitter.com/demojsorg/orga/members">orga team</a>, to <a href="http://twitter.com/tbx">@tbx</a> from Mozilla Labs and to <a href="http://m4de.com">@m4de</a> for the nice logo.</p>
+        <p>Many thanks to the <a href="https://twitter.com/demojsorg/orga/members">organizing team</a>, to <a href="http://twitter.com/tbx">@tbx</a> from Mozilla Labs and to <a href="http://m4de.com">@m4de</a> for the nice logo.</p>
       </div>
 
       <div id="footer" class="shadow">
@@ -220,5 +172,16 @@ div.moreInfos{ padding:0; overflow:hidden;
         });*/
       });
     </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23979135-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+     </script>
   </body>
 </html>
