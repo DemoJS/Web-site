@@ -14,7 +14,7 @@ html, body, #container{ padding: 0}
 #logo h1 {color: #5E8C6A}
 #logo span {display: none;}
 
-#content { background:#000; border-radius:0 25px;}
+#content { background:#222; border-radius:0 25px;}
 #content > * {margin: 0 20px; color: #EEE}
 #content > h2 { color: rgb(255,103,1); margin-top: 20px;}
 #content > h2:first-child { color: rgb(255,103,1); margin-top: 10px;}
