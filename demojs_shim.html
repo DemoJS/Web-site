@@ -23,7 +23,7 @@ function c() {
 }
 
 function d() {
-  return getContext('webgl') || getContext('experimental-webgl');
+  return getContext('webgl') || getContext('experimental-webgl') || getContext('webkit-3d') || getContext('moz-webgl');
 }
 
 document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
